@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Learning the Forms</title>
+    </head>
+    <body>
+        <h1>Hello, Forms!</h1>
+        <form action="/web-server-url" method="post">
+            <fieldset>
+                <legend>Add User</legend>
+
+                <div>
+                    <label for="firstName">First Name: </label>
+                    <input type="text" id="firstName" name="first_name">
+                </div>
+
+                <div>
+                    <label for="lastName">Last Name: </label>
+                    <input type="text" id="lastName" name="last_name">
+                </div>
+
+                <div>
+                    <label for="enterEmail">Email: </label>
+                    <input type="email" id="enterEmail" name="email_address">
+                </div>
+
+                    <label for="role">Role: </label>
+                    <select id="role" name="user_role_name">
+
+                    <option value="">--Pick A Role-</option>
+                    <option value="admin">Admin</option>
+                    <option value="user">User</option>
+                    <option value="guest">Guest</option>
+                </select>
+
+                <div>
+                    <label for="expirationDate">Expiration: </label>
+                    <input type="date" id="expirationDate" name="expiration
+                    Date">
+                </div>
+
+                    <label for="bio">Bio: </label>
+                    <textarea id="bio" name="bio"></textarea>
+                <div>
+                    <button type="submit">Add Person</button>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
